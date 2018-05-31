@@ -24,9 +24,9 @@ router.post('/', (req, res) => {
 router.delete('/', (req, res)=>{
     let id = req.query.id;
     console.log(`In /movie DELETE...`);
-    for (let i=0; i<movieArray.length; index ){
+    for (let i=0; i<movieArray.length; i++ ){
         let movie = movieArray[i];
-        if(id === movie.id){
+        if(id == movie.id){
             movieArray.splice(i,1);
         }
     }

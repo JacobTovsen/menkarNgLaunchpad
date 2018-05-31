@@ -22,10 +22,13 @@
            <input type="text" placeholder="movie?" ng-model="LC.movieIn"> 
            <button ng-click="LC.getMovie()">Add</button>
            <ul>
-               <li ng-repeat="movie in LC.movies" ng-click="LC.removeMe( $index )">{{ movie }}</li>
+               <li ng-repeat="movie in LC.movies" ng-click="LC.removeMe( $index )">
+                   Title: {{movie.title}} <br> ID: {{movie.id}}</li>
            </ul>
         </div>
     </div>
    </div> 
 </body>
 </html>
+
+<!-- {{ 'Title: ' + movie.title + <br> + ' id:' + movie.id}} -->
